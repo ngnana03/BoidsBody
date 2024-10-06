@@ -1,9 +1,3 @@
-// Unity Audio Synthesis (Sine + FM + Envelope)
-
-// IMDM 327 Class Material
-
-// Author: Myungin Lee
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,13 +7,13 @@ public class Sound : MonoBehaviour
     AudioSource audioSource;
 
     [Range(0.1f, 5f)]  // Slider in the inspector to control the speed of sound synthesis
-    public float speed = 1f; // Speed multiplier for sound
+    public float speed = 1f;
 
     [Range(0f, 3f)]  // Slider in the inspector for amplitude
-    public float amplitude = 3f; // Initial amplitude
+    public float amplitude = 3f;
 
     public float sampleRate = 44100f;
-    float phase = 0; // Phase of an oscillator
+    float phase = 0;
 
     void Start()
     {
